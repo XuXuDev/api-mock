@@ -1,0 +1,49 @@
+/**
+ * @Author: wangxu <ceekey>
+ * @Date:   2017-05-25 16:28:58
+ * @Email:  xu.wang@ishansong.com
+ * @Project: terra
+ * @Filename: index.css
+ * @Last modified by:   ceekey
+ * @Last modified time: 2017-05-25 19:01:12
+ */
+#components-layout-demo-custom-trigger .trigger {
+    font-size  : 18px;
+    line-height: 64px;
+    padding    : 0 16px;
+    cursor     : pointer;
+    transition : color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+    color: #108ee9;
+}
+
+.welcome {
+    color      : #fff;
+    font-size  : 16px;
+    margin-left: 24px;
+}
+
+.logout-div {
+    float       : right;
+    margin-right: 20px;
+}
+
+.logo {
+    height       : 42px;
+    color        : #fff;
+    font-size    : 20px;
+    text-align   : right;
+    padding-top  : 8px;
+    padding-right: 20px;
+    border-top   : 1px solid dimgrey;
+}
+
+#components-layout-demo-custom-trigger .ant-layout-sider-collapsed .anticon {
+    font-size: 16px;
+}
+
+#components-layout-demo-custom-trigger .ant-layout-sider-collapsed .nav-text {
+    display: none;
+}
