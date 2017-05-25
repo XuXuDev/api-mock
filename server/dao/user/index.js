@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: base.js
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 10:59:17
+ * @Last modified time: 2017-05-25 15:36:49
  */
 
 'use strict'
@@ -20,7 +20,7 @@ let userDao = {
     user: {
         register: function * (userInfo) {
 
-            userInfo.password = md5(common.unEncryptPassword(loginInfo.password));
+            userInfo.password = md5(common.unEncryptPassword(userInfo.password));
             let userEntity = new model(userInfo);
 
             try {

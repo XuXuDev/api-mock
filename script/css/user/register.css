@@ -1,0 +1,23 @@
+/**
+ * @Author: wangxu <ceekey>
+ * @Date:   2017-05-25 14:41:08
+ * @Email:  xu.wang@ishansong.com
+ * @Project: terra
+ * @Filename: register.css
+ * @Last modified by:   ceekey
+ * @Last modified time: 2017-05-25 14:44:14
+ */
+
+
+
+.register-info{
+    border-radius   : 15px;
+    z-index         : 999;
+    position        : absolute;
+    width           : 60%;
+    height          : auto;
+    padding         : 30px;
+    left            : 20%;
+    top             : 20%;
+    background-color: rgba(200,200,200,0.5);
+}

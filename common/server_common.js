@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: server_common.js
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-05 11:46:29
+ * @Last modified time: 2017-05-25 15:40:12
  */
 
 'use strict'
@@ -56,7 +56,7 @@ class ServerCommon extends Common {
         } else if (err.name === "ValidationError") {
             result.status = 100;
             result.err = err;
-            result.message = connactErrMessage(err);
+            result.message = this.connactErrMessage(err);
         } else if(err.code === 102) {
             result.status = 102;
             result.err = null;

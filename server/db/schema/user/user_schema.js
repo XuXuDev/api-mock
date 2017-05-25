@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: user.js
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-01 23:00:42
+ * @Last modified time: 2017-05-25 15:46:07
  */
 
 'use strict';
@@ -18,6 +18,7 @@ let userSchema = new mongoose.Schema({
     mtime: {type:Number,default:Date.now()},
     email: { type: String, trim: true, required: [true,'请填写邮箱'] },
     nickname: { type: String, trim: true, required: [true,'请填写昵称'] },
+    phone: { type: Number, trim: true, required: [true,'请填写电话'] },
     role: { type:Array,default:[]}
 }, {
     collection: 'user',

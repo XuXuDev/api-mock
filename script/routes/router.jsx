@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: router.jsx
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 11:19:32
+ * @Last modified time: 2017-05-25 16:17:07
  */
 
 
@@ -26,9 +26,10 @@ export default class Routers extends React.Component{
     render(){
         return (
             <Router history={hashHistory}>
-                <Route path="/" component={Demo}/>
+                <Route path="/" component={Login}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={Register}/>
+                <Route path="/add" component={Demo}/>
             </Router>
         )
     }
