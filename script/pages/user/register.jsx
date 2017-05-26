@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: register.jsx
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 16:11:58
+ * @Last modified time: 2017-05-26 01:44:03
  */
 
 import React, {Component, PropTypes} from 'react';

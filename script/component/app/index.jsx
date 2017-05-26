@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: index.jsx
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 19:10:33
+ * @Last modified time: 2017-05-25 19:54:14
  */
 
 'use strict'
@@ -13,7 +13,14 @@
 import React, {Component} from "react";
 import './index.css';
 
-import {Layout, Menu, Icon, Breadcrumb, Dropdown} from 'antd';
+import {
+    Layout,
+    Menu,
+    Icon,
+    Breadcrumb,
+    Dropdown
+} from 'antd';
+const SubMenu = Menu.SubMenu;
 const {Header, Sider, Content} = Layout;
 
 export default class App extends React.Component {
@@ -77,25 +84,25 @@ export default class App extends React.Component {
                                 ? 'menu-unfold'
                                 : 'menu-fold'} onClick={this.toggle}/>
                         </div>
-                        <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                            <Menu.Item key="1">
-                                <Icon type="user"/>
-                                <span className="nav-text">nav 1</span>
-                            </Menu.Item>
-                            <Menu.Item key="2">
-                                <Icon type="video-camera"/>
-                                <span className="nav-text">nav 2</span>
-                            </Menu.Item>
+                        <Menu theme="dark" mode="inline" defaultOpenKeys={['sub1']} selectedKeys={['1']}>
+                            <SubMenu key="sub1" title={< span > <Icon type="team"/> < span > 团队管理 < /span></span >}>
+                                <Menu.Item key="1">新建团队</Menu.Item>
+                                <Menu.Item key="2">我的团队</Menu.Item>
+                            </SubMenu>
                             <Menu.Item key="3">
-                                <Icon type="upload"/>
-                                <span className="nav-text">nav 3</span>
+                                <Icon type="notification"/>
+                                <span className="nav-text">消息中心</span>
+                            </Menu.Item>
+                            <Menu.Item key="4">
+                                <Icon type="api"/>
+                                <span className="nav-text">接口管理</span>
                             </Menu.Item>
                         </Menu>
                     </Sider>
                     <Layout>
                         <Header style={{
                             margin: '0',
-                            paddingLeft: "25px",
+                            paddingLeft: "40px",
                             background: '#fff'
                         }}>
                             <Breadcrumb>

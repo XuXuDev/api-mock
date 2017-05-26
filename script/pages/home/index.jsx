@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: index.jsx
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 17:15:08
+ * @Last modified time: 2017-05-26 01:51:44
  */
 
 'use strict'
@@ -23,7 +23,7 @@ import {hashHistory} from 'react-router';
 
 import '../../css/home/index.css';
 
-import OwnMenu from '../../component/menu/index.jsx'
+import OwnMenu from '../../component/app/index.jsx'
 
 const common = require('../../../common/common');
 

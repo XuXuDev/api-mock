@@ -5,7 +5,7 @@
  * @Project: terra
  * @Filename: router.jsx
  * @Last modified by:   ceekey
- * @Last modified time: 2017-05-25 17:59:57
+ * @Last modified time: 2017-05-25 23:30:16
  */
 
 import React from 'react';
@@ -31,7 +31,6 @@ export default class Routers extends React.Component {
                 <Route path="/" component={App}>
                     <Route path="/home" component={HomeBody}/>
                 </Route>
-                <Route path="/home" component={HomeBody}/>
                 <Route path="/add" component={Demo}/>
             </Router>
         )
